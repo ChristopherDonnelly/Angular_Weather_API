@@ -1,0 +1,27 @@
+h2 {
+    text-align: center;
+    margin: -10px 0px 20px;
+    font-size: 1.7em;
+}
+
+img {
+    position: absolute;
+    width: 60px;
+    left: 30px;
+    top: 0px;
+}
+
+#right_layer img {
+    position: relative;
+    width: 620px;
+}
+
+#left_layer, #right_layer {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+
+#right_layer {
+    width: 79%;
+}

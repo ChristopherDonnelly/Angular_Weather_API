@@ -1,0 +1,16 @@
+<div id="wrapper">
+    <h1>Dojo Weather Forecast</h1>
+    
+    <a href="#" [routerLink]="['seattle']">Seattle, WA</a> | 
+    <a href="#" [routerLink]="['sanjose']">San Jose, CA</a> | 
+    <a href="#" [routerLink]="['burbank']">Burbank, CA</a> | 
+    <a href="#" [routerLink]="['dallas']">Dallas, TX</a> | 
+    <a href="#" [routerLink]="['dc']">Washington D.C.</a> | 
+    <a href="#" [routerLink]="['chicago']">Chicago, IL</a>
+
+    <fieldset>
+        <legend>&nbsp;{{cityDataService.city.location}}&nbsp;</legend>
+        <router-outlet></router-outlet>
+    </fieldset>
+
+</div>

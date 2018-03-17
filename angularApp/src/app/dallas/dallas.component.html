@@ -1,0 +1,19 @@
+<div *ngIf="cityDataService.city.temp">
+  <h2>{{cityDataService.city.location}}, TX</h2>
+  <div id="left_layer">
+    <img src="{{cityDataService.city.icon_URL}}{{cityDataService.city.icon}}.png" alt="{{cityDataService.city.status}}">
+    <p>Humidity: {{cityDataService.city.humidity}}</p>
+    <p>Temp (avg): {{cityDataService.city.temp}}<sup>&#8457;</sup></p>
+    <p>Temp (high): {{cityDataService.city.temp_high}}<sup>&#8457;</sup></p>
+    <p>Temp (low): {{cityDataService.city.temp_low}}<sup>&#8457;</sup></p>
+    <p>Status: {{cityDataService.city.status}}</p>
+  </div>
+  <div id="right_layer">
+    <img [src]="fullImagePath" alt="Seattle">
+  </div>
+</div>
+<div *ngIf="!cityDataService.city.temp">
+  
+    <p>loading...</p>
+
+</div>
